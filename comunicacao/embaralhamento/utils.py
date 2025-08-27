@@ -31,7 +31,7 @@ def embaralhamento (sinal_entrada, fs):
     sos_pb = butter(8, normal_cutoff_fpb, btype='low', analog=False, output='sos')
     sinal_saida = sosfilt(sos_pb, x3)
 
-    return sinal_saida, x1, x2, x3, 
+    return sinal_saida, x1, x2, x3
 
 def plot_espectro(sinal, fs, titulo, ax):
     n = len(sinal)
